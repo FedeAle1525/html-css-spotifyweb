@@ -90,7 +90,7 @@ body {
     color: white;
 }
 
-.player-album.row-between{
+.player-album.row-center{
     gap: 48px;
 }
 
