@@ -18,3 +18,49 @@ a {
     text-decoration: none;
     color: currentColor;
 }
+
+/* GENERAL */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.row{
+    display: flex;
+}
+
+/* MAIN */
+
+.main{
+    flex-grow: 1;
+    padding: 60px;
+    border: 2px solid red;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width: 200px;
+    flex-shrink: 0;
+    padding: 30px;
+    border: 2px solid blue;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+    flex-grow: 1;
+    padding: 40px;
+    border: 2px solid green;
+}
+
+/* ASIDE */
+
+.player{
+    height: auto;
+    flex-shrink: 0;
+    padding: 20px;
+    border: 2px solid orange;
+}
