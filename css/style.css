@@ -116,3 +116,13 @@ body {
 .player .album-icons > i{
     color: var(--text-gray);
 }
+
+/* MEDIAQUERY ASIDE  */
+
+@media screen and (max-width: 552px){
+
+    .player .album-icons.row{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
