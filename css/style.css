@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: 'Arimo', sans-serif;
 }
 
 .row{
@@ -69,6 +70,12 @@ body {
 .player{
     height: auto;
     flex-shrink: 0;
-    padding: 20px;
-    border: 2px solid orange;
+    padding: 10px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+.player.row{
+    justify-content: space-between;
+    align-items: center;
 }
