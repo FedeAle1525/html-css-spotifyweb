@@ -48,6 +48,15 @@ body {
     border: 2px solid blue;
 }
 
+/* MEDIAQUERY NAVBAR */
+
+@media screen and (max-width: 552px){
+    
+    .navbar{
+        width: 80px;
+    }
+}
+
 /* MAIN CONTENT */
 
 .main-content{
