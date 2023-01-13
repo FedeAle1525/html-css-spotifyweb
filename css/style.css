@@ -164,6 +164,10 @@ a {
     flex-grow: 1;
 }
 
+.nav-time > [class^="time-"]{
+    font-size: 10px;
+}
+
 /* Volume */
 
 .player .player-audio{
