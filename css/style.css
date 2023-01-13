@@ -93,9 +93,12 @@ a {
     color: white;
 }
 
-.player .player-album{
+.player .player-album,
+.player .player-audio{
     flex-basis: 230px;
 }
+
+/* Album */
 
 .player-album.row-center{
     padding: 0 8px;
@@ -122,6 +125,15 @@ a {
 
 .player .album-icons > i{
     color: var(--text-gray);
+}
+
+/* Volume */
+
+.player-audio .nav-bar{
+    height: 3px;
+    border-radius: 999px;
+    background-color: white;
+    width: 20px;
 }
 
 /* MEDIAQUERY ASIDE  */
