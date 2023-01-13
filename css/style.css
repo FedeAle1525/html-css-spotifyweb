@@ -119,10 +119,20 @@ body {
 
 /* MEDIAQUERY ASIDE  */
 
-@media screen and (max-width: 552px){
-
+@media screen and (max-width: 639px){
     .player .album-icons.row{
         flex-direction: column;
         gap: 5px;
     }
+
+    .player-album.row-center{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 552px){
+    .album-preview .album-img{
+        width: 28px;
+    }
+    
 }
