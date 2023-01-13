@@ -73,6 +73,14 @@ a {
     flex-grow: 1;
 }
 
+.navbar .navbar-logo{
+    flex-basis: 88px;
+}
+
+.navbar .navbar-logo > img{
+    height: 40px;
+}
+
 /* MEDIAQUERY NAVBAR */
 
 @media screen and (max-width: 552px){
@@ -87,8 +95,8 @@ a {
 .main-content{
     overflow: auto;
     flex-grow: 1;
-    padding: 40px;
-    border: 2px solid green;
+    background-color: rgb(20, 25, 34);
+    color: var(--text-gray);
 }
 
 /* ASIDE */
