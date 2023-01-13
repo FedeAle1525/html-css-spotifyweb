@@ -142,6 +142,28 @@ a {
     flex-basis: 40%;
 }
 
+.player-nav .list-icons{
+    gap: 20px;
+}
+
+.player-nav .list-icons > .circle-play{
+    margin: 0 10px;
+}
+
+.list-icons > .circle-play > i{
+    font-size: 30px;
+}
+
+.player .nav-time{
+    width: 100%;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.nav-time .nav-bar{
+    flex-grow: 1;
+}
+
 /* Volume */
 
 .player .player-audio{
