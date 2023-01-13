@@ -27,7 +27,7 @@ a {
 
 /* GENERAL */
 
-body {
+.app {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -51,13 +51,15 @@ body {
 
 .main{
     flex-grow: 1;
+    overflow: hidden;
     /* border: 2px solid red; */
 }
 
 /* NAVBAR */
 
 .navbar{
-    width: 200px;
+    overflow: hidden;
+    flex-basis: 230px;
     flex-shrink: 0;
     padding: 30px;
     border: 2px solid blue;
@@ -68,13 +70,14 @@ body {
 @media screen and (max-width: 552px){
     
     .navbar{
-        width: 80px;
+        flex-basis: 50px;
     }
 }
 
 /* MAIN CONTENT */
 
 .main-content{
+    overflow: auto;
     flex-grow: 1;
     padding: 40px;
     border: 2px solid green;
@@ -85,13 +88,17 @@ body {
 .player{
     height: auto;
     flex-shrink: 0;
-    padding: 8px 12px 15px 12px;
+    padding: 12px 0;
     background-color: rgb(40, 40, 40);
     color: white;
 }
 
+.player .player-album{
+    flex-basis: 230px;
+}
+
 .player-album.row-center{
-    gap: 48px;
+    padding: 0 8px;
 }
 
 .album-preview.row,
@@ -123,10 +130,6 @@ body {
     .player .album-icons.row{
         flex-direction: column;
         gap: 5px;
-    }
-
-    .player-album.row-center{
-        gap: 20px;
     }
 }
 
