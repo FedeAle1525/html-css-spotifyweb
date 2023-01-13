@@ -28,8 +28,6 @@ a {
 /* GENERAL */
 
 .app {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     font-family: 'Arimo', sans-serif;
 }
@@ -45,6 +43,11 @@ a {
 
 .row-center{
     align-items: center;
+}
+
+.row-column{
+    display: flex;
+    flex-direction: column;
 }
 
 /* MAIN */
@@ -98,6 +101,12 @@ a {
     flex-basis: 230px;
 }
 
+.nav-bar{
+    height: 3px;
+    border-radius: 999px;
+    background-color: white;
+}
+
 /* Album */
 
 .player-album.row-center{
@@ -127,6 +136,12 @@ a {
     color: var(--text-gray);
 }
 
+/* Navigazione */
+
+.player .player-nav{
+    flex-basis: 40%;
+}
+
 /* Volume */
 
 .player .player-audio{
@@ -139,9 +154,6 @@ a {
 }
 
 .player-audio .nav-bar{
-    height: 3px;
-    border-radius: 999px;
-    background-color: white;
     width: 115px;
 }
 
