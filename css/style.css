@@ -67,6 +67,7 @@ a {
     padding-left: 20px;
     background-color: black;
     color: var(--text-gray);
+    font-size: 12px;
 }
 
 .navbar .navbar-playlist{
@@ -79,6 +80,26 @@ a {
 
 .navbar .navbar-logo > img{
     height: 40px;
+}
+
+.navbar-menu .menu-list{
+    gap: 12px;
+}
+
+.navbar-menu .menu-list i{
+    font-size: 20px;
+}
+
+.menu-list > [class^="item-"]{
+    gap: 10px;
+}
+
+.menu-list > .item-home > i{
+    color: #D2D2D2;
+}
+
+.menu-list > .item-home > span{
+    color: white;
 }
 
 /* MEDIAQUERY NAVBAR */
