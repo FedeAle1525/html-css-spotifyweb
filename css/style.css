@@ -64,8 +64,13 @@ a {
     overflow: hidden;
     flex-basis: 230px;
     flex-shrink: 0;
-    padding: 30px;
-    border: 2px solid blue;
+    padding-left: 20px;
+    background-color: black;
+    color: var(--text-gray);
+}
+
+.navbar .navbar-playlist{
+    flex-grow: 1;
 }
 
 /* MEDIAQUERY NAVBAR */
