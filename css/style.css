@@ -129,11 +129,20 @@ a {
 
 /* Volume */
 
+.player .player-audio{
+    padding: 0 8px;
+    gap: 12px;
+}
+
+.player .audio-nav{
+    display: contents;
+}
+
 .player-audio .nav-bar{
     height: 3px;
     border-radius: 999px;
     background-color: white;
-    width: 20px;
+    width: 115px;
 }
 
 /* MEDIAQUERY ASIDE  */
