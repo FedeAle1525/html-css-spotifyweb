@@ -64,7 +64,7 @@ a {
     overflow: hidden;
     flex-basis: 230px;
     flex-shrink: 0;
-    padding-left: 20px;
+    padding: 0 20px;
     background-color: black;
     color: var(--text-gray);
     font-size: 12px;
@@ -227,8 +227,18 @@ a {
     margin-top: 10px;
 }
 
-.nav-time .nav-bar{
+.nav-time .nav-bars{
     flex-grow: 1;
+}
+
+.nav-time .nav-bar.white{
+    /* flex-grow: 1; */
+    flex-basis: 20%;
+}
+
+.nav-time .nav-bar.gray{
+    flex-basis: 80%;
+    background-color: var(--text-gray);
 }
 
 .nav-time > [class^="time-"]{
@@ -246,8 +256,14 @@ a {
     display: contents;
 }
 
-.player-audio .nav-bar{
-    width: 115px;
+.player-audio .nav-bar.white{
+    width: 25px;
+    background-color: white;
+}
+
+.player-audio .nav-bar.gray{
+    width: 90px;
+    background-color: var(--text-gray);
 }
 
 /* MEDIAQUERY ASIDE  */
