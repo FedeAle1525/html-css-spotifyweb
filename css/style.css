@@ -263,6 +263,32 @@ a {
     gap: 16px;
 }
 
+/* MEDIAQUERY MAIN-CONTENT */
+
+@media screen and (max-width: 633px) {
+
+    .main-menu .menu-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: unset;
+        row-gap: 16px;
+        margin: 0 -16px;
+    }
+
+    .main-menu .menu-list > li{
+        flex-basis: calc(100% / 4);
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 552px){
+
+    .main-menu .menu-list > li{
+        flex-basis: calc(100% / 3);
+    }
+}
+
 /* ASIDE */
 
 .player{
