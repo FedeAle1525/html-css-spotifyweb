@@ -135,6 +135,28 @@ a {
     font-size: 18px;
 }
 
+/* App */
+
+.navbar-app{
+    margin-bottom: 10px;
+}
+
+.navbar-app .item-app{
+    gap: 10px;
+}
+
+.navbar-app::after{
+    display: block;
+    content: '';
+    height: 1px;
+    border-radius: 999px;
+    background-color: var(--text-gray);
+    margin-top: 10px;
+}
+
+
+/* Account */
+
 /* MEDIAQUERY NAVBAR */
 
 @media screen and (max-width: 552px){
