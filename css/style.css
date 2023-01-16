@@ -154,8 +154,32 @@ a {
     margin-top: 10px;
 }
 
-
 /* Account */
+
+.navbar-account{
+    margin-bottom: 5px;
+}
+
+.navbar-account .item-account{
+    gap: 10px;
+}
+
+.item-account .account-avatar{
+    border-radius: 50%;
+    object-fit: fill;
+    object-position: center;
+    background-color: gray;
+}
+
+.item-account .account-img{
+    width: 20px;
+    height: 18px;
+}
+
+.item-account .account-name{
+    color: white;
+    font-weight: 700;
+}
 
 /* MEDIAQUERY NAVBAR */
 
