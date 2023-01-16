@@ -269,6 +269,10 @@ a {
 
 /* Recent */
 
+.recent-albums{
+    margin: 0 -15px;
+}
+
 .recent .recent-title{
     font-size: 20px;
     font-weight: bold;
@@ -279,11 +283,13 @@ a {
 .recent-albums .recent-preview{
     text-align: center;
     row-gap: 16px;
+    padding: 0 15px;
     flex-basis: calc(100% / 6);
 }
 
-.recent-albums .recent-thumb{
-    height: 60%;
+.recent-albums .recent-thumb > img{
+    display: block;
+    flex-basis: 170px;
     aspect-ratio: 1/1;
 }
 
