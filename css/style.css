@@ -282,8 +282,7 @@ a {
     flex-basis: calc(100% / 6);
 }
 
-.recent-albums .recent-img{
-    display: block;
+.recent-albums .recent-thumb{
     height: 60%;
     aspect-ratio: 1/1;
 }
@@ -292,6 +291,7 @@ a {
     font-size: 18px;
     font-weight: bold;
     color: white;
+    margin-bottom: 12px;
 }
 
 /* MEDIAQUERY MAIN-CONTENT */
