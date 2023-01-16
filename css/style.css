@@ -229,6 +229,10 @@ a {
     color: var(--text-gray);
 }
 
+.main-content > :not(.main-header){
+    padding: 0 20px;
+}
+
 /* Main-Header */
 
 .main-content > .main-header{
@@ -261,6 +265,33 @@ a {
 
 .main-menu .menu-list{
     gap: 16px;
+}
+
+/* Recent */
+
+.recent .recent-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 36px;
+}
+
+.recent-albums .recent-preview{
+    text-align: center;
+    row-gap: 16px;
+    flex-basis: calc(100% / 6);
+}
+
+.recent-albums .recent-img{
+    display: block;
+    height: 60%;
+    aspect-ratio: 1/1;
+}
+
+.recent-albums .recent-album{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
 
 /* MEDIAQUERY MAIN-CONTENT */
