@@ -80,7 +80,11 @@ a {
     flex-basis: 88px;
 }
 
-.navbar .navbar-logo > img{
+.navbar-logo > .logo-mobile{
+    display: none;
+}
+
+.navbar-logo > .logo-img{
     height: 40px;
 }
 
@@ -187,6 +191,30 @@ a {
     
     .navbar{
         flex-basis: 50px;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .navbar-playlist,
+    .navbar-logo > .logo-img,
+    .navbar span{
+        display: none;
+    }
+
+    .navbar .navbar-logo{
+        flex-basis: unset;
+        padding: 12px 0;
+    }
+
+    .navbar-logo > .logo-mobile{
+        display: block;
+        height: 30px;
+        aspect-ratio: 1/1;
+        filter: invert(1);
+    }
+
+    .navbar .navbar-menu{
+        margin-bottom: auto;
     }
 }
 
