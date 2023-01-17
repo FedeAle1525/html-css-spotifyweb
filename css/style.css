@@ -341,29 +341,29 @@ a {
 
 /* MEDIAQUERY MAIN-CONTENT */
 
-/* @media screen and (max-width: 633px) {
+@media screen and (max-width: 878px){
 
-    .main-menu .menu-list{
+    .recent-albums,
+    .personal-albums,
+    .popular-albums{
         flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        gap: unset;
-        row-gap: 16px;
-        margin: 0 -16px;
     }
 
-    .main-menu .menu-list > li{
+    .recent-albums .recent-preview,
+    .personal-albums .personal-preview,
+    .popular-albums .popular-preview{
         flex-basis: calc(100% / 4);
-        padding: 0 16px;
     }
 }
 
-@media screen and (max-width: 552px){
+@media screen and (max-width: 639px){
 
-    .main-menu .menu-list > li{
-        flex-basis: calc(100% / 3);
+    .recent-albums .recent-preview,
+    .personal-albums .personal-preview,
+    .popular-albums .popular-preview{
+        flex-basis: calc(100% / 2);
     }
-} */
+}
 
 /* ASIDE */
 
