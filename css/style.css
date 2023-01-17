@@ -162,6 +162,11 @@ a {
     font-size: 18px;
 }
 
+.playlist-list > li:hover,
+.playlist-list > li:hover i{
+    color: white;
+}
+
 /* App */
 
 .navbar-app{
@@ -179,6 +184,10 @@ a {
     border-radius: 999px;
     background-color: var(--text-gray);
     margin-top: 10px;
+}
+
+.navbar-app .item-app:hover{
+    color: white;
 }
 
 /* Account */
