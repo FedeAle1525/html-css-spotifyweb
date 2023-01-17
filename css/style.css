@@ -235,13 +235,21 @@ a {
 
 /* Main-Header */
 
-.main-content > .main-header{
+.main-content > .header{
     padding: 0 5px;
     height: 88px;
     background-color: rgb(20, 25, 34);
     color: white;
+    position: fixed;
+    width: calc(100% - 230px);
+    top: 0;
+    z-index: 9999;
+}
+
+.main-content .main-header{
     justify-content: flex-end;
     align-items: center;
+    height: 88px;
 }
 
 .main-header .button{
@@ -362,6 +370,13 @@ a {
     .personal-albums .personal-preview,
     .popular-albums .popular-preview{
         flex-basis: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 552px){
+
+    .main-content > .header{
+        width: calc(100% - 50px);
     }
 }
 
