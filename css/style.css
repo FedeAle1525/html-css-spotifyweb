@@ -305,6 +305,47 @@ a {
     margin-bottom: 12px;
 }
 
+/* Personale */
+
+.personal{
+    margin-bottom: 32px;
+}
+
+.personal .personal-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.personal .personal-subtitle{
+    margin-bottom: 36px;
+}
+
+.personal-albums{
+    margin: 0 -15px;
+}
+
+.personal-albums .personal-preview{
+    text-align: center;
+    row-gap: 16px;
+    padding: 0 15px;
+    flex-basis: calc(100% / 6);
+}
+
+.personal-albums .personal-thumb > img{
+    display: block;
+    width: 170px;
+    aspect-ratio: 1/1;
+}
+
+.personal-albums .personal-album{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+}
+
 /* MEDIAQUERY MAIN-CONTENT */
 
 /* @media screen and (max-width: 633px) {
