@@ -264,10 +264,15 @@ a {
 }
 
 .main-menu .menu-list{
+    flex-wrap: wrap;
     gap: 16px;
 }
 
 /* Recent */
+
+.recent{
+    margin-bottom: 40px;
+}
 
 .recent-albums{
     margin: 0 -15px;
@@ -289,7 +294,7 @@ a {
 
 .recent-albums .recent-thumb > img{
     display: block;
-    flex-basis: 170px;
+    width: 170px;
     aspect-ratio: 1/1;
 }
 
@@ -302,7 +307,7 @@ a {
 
 /* MEDIAQUERY MAIN-CONTENT */
 
-@media screen and (max-width: 633px) {
+/* @media screen and (max-width: 633px) {
 
     .main-menu .menu-list{
         flex-wrap: wrap;
@@ -324,7 +329,7 @@ a {
     .main-menu .menu-list > li{
         flex-basis: calc(100% / 3);
     }
-}
+} */
 
 /* ASIDE */
 
