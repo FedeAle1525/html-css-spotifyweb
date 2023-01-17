@@ -64,11 +64,15 @@ a {
     overflow: hidden;
     flex-basis: 230px;
     flex-shrink: 0;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     background-color: black;
     color: var(--text-gray);
     font-size: 12px;
 }
+
+.navbar > :not(.navbar-menu){
+    padding: 0 20px;
+} 
 
 .navbar .navbar-playlist{
     flex-grow: 1;
@@ -104,13 +108,32 @@ a {
 
 .menu-list > [class^="item-"]{
     gap: 10px;
+    position: relative;
 }
 
-.menu-list > .item-home i{
+.menu-list > [class^="item-"].active::before,
+.menu-list > [class^="item-"]:hover::before{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: lightgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-list > [class^="item-"] > a{
+    padding-left: 20px;
+}
+
+.menu-list > .item-home.active i,
+.menu-list > [class^="item-"]:hover i{
     color: #D2D2D2;
 }
 
-.menu-list > .item-home > span{
+.menu-list > .item-home.active span,
+.menu-list > [class^="item-"]:hover span{
     color: white;
 }
 
