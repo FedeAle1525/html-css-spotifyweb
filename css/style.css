@@ -346,6 +346,44 @@ a {
     margin-bottom: 12px;
 }
 
+/* Popolare */
+
+.popular .popular-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.popular .popular-subtitle{
+    margin-bottom: 36px;
+}
+
+.popular-albums{
+    margin: 0 -15px;
+}
+
+.popular-albums .popular-preview{
+    text-align: center;
+    row-gap: 16px;
+    padding: 0 15px;
+    flex-basis: calc(100% / 6);
+}
+
+.popular-albums .popular-thumb > img{
+    display: block;
+    width: 170px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.popular-albums .popular-album{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+}
+
 /* MEDIAQUERY MAIN-CONTENT */
 
 /* @media screen and (max-width: 633px) {
