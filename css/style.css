@@ -239,6 +239,15 @@ a {
     .navbar .navbar-menu{
         margin-bottom: auto;
     }
+
+    .menu-list > [class^="item-"] > a{
+        padding-left: unset;
+    }
+
+    .navbar-menu .menu-list > [class^="item-"]::before{
+        display: none;
+    }
+
 }
 
 /* MAIN CONTENT */
