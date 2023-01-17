@@ -268,101 +268,49 @@ a {
     gap: 16px;
 }
 
-/* Recent */
+/* Recent - Personale - Popolare */
 
 .recent{
     margin-bottom: 40px;
 }
 
-.recent-albums{
-    margin: 0 -15px;
-}
-
-.recent .recent-title{
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 36px;
-}
-
-.recent-albums .recent-preview{
-    text-align: center;
-    row-gap: 16px;
-    padding: 0 15px;
-    flex-basis: calc(100% / 6);
-}
-
-.recent-albums .recent-thumb > img{
-    display: block;
-    width: 170px;
-    aspect-ratio: 1/1;
-}
-
-.recent-albums .recent-album{
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 12px;
-}
-
-/* Personale */
-
 .personal{
     margin-bottom: 32px;
 }
 
-.personal .personal-title{
+.recent .recent-title,
+.personal .personal-title,
+.popular .popular-title {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin-bottom: 12px;
 }
 
-.personal .personal-subtitle{
+.recent .recent-title{ 
     margin-bottom: 36px;
 }
 
-.personal-albums{
-    margin: 0 -15px;
-}
-
-.personal-albums .personal-preview{
-    text-align: center;
-    row-gap: 16px;
-    padding: 0 15px;
-    flex-basis: calc(100% / 6);
-}
-
-.personal-albums .personal-thumb > img{
-    display: block;
-    width: 170px;
-    aspect-ratio: 1/1;
-}
-
-.personal-albums .personal-album{
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
+.personal .personal-title{
     margin-bottom: 12px;
 }
-
-/* Popolare */
 
 .popular .popular-title{
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
     margin-bottom: 12px;
 }
 
+.personal .personal-subtitle,
 .popular .popular-subtitle{
     margin-bottom: 36px;
 }
 
+.recent-albums,
+.personal-albums,
 .popular-albums{
     margin: 0 -15px;
 }
 
+.recent-albums .recent-preview,
+.personal-albums .personal-preview,
 .popular-albums .popular-preview{
     text-align: center;
     row-gap: 16px;
@@ -370,13 +318,20 @@ a {
     flex-basis: calc(100% / 6);
 }
 
+.recent-albums .recent-thumb > img,
+.personal-albums .personal-thumb > img,
 .popular-albums .popular-thumb > img{
     display: block;
     width: 170px;
     aspect-ratio: 1/1;
+}
+
+.popular-albums .popular-thumb > img{
     border-radius: 50%;
 }
 
+.recent-albums .recent-album,
+.personal-albums .personal-album,
 .popular-albums .popular-album{
     font-size: 18px;
     font-weight: bold;
