@@ -475,6 +475,15 @@ a {
     color: var(--text-gray);
 }
 
+.album-description > .album-track:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.album-icons > i:hover{
+    color: white;
+}
+
 /* Navigazione */
 
 .player .player-nav{
@@ -493,6 +502,10 @@ a {
     font-size: 30px;
 }
 
+.list-icons > .circle-play > i:hover{
+    transform: scale(1.2);
+}
+
 .player .nav-time{
     width: 100%;
     gap: 20px;
@@ -506,6 +519,23 @@ a {
 
 .nav-time .nav-bar.white{
     width: 20%;
+    position: relative;
+}
+
+.nav-time .nav-bar:hover .nav-bar.white{
+    background-color: lightgreen;
+}
+
+.nav-time .nav-bar:hover .nav-bar.white::after{
+    content: '';
+    display: block;
+    width: 10px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-40%);
 }
 
 .nav-time > [class^="time-"]{
@@ -526,6 +556,23 @@ a {
 .player-audio .nav-bar.white{
     width: 20%;
     background-color: white;
+    position: relative;
+}
+
+.player-audio .nav-bar:hover .nav-bar.white{
+    background-color: lightgreen;
+}
+
+.player-audio .nav-bar:hover .nav-bar.white::after{
+    content: '';
+    display: block;
+    width: 10px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-40%);
 }
 
 .player-audio .nav-bar.gray{
