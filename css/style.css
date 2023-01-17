@@ -200,7 +200,7 @@ a {
 
 .item-account .account-img{
     width: 20px;
-    height: 18px;
+    aspect-ratio: 1/1;
 }
 
 .item-account .account-name{
@@ -238,6 +238,10 @@ a {
 
     .navbar .navbar-menu{
         margin-bottom: auto;
+    }
+
+    .navbar .navbar-account{
+        padding: unset;
     }
 
     .menu-list > [class^="item-"] > a{
