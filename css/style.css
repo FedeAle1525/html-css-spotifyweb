@@ -302,6 +302,11 @@ a {
     border-radius: 999px;
 }
 
+.main-header .button:hover{
+    transform: scale(1.2);
+    margin-right: 20px;
+}
+
 .main-header .button > a{
     text-transform: uppercase;
     padding: 0 40px;
@@ -313,12 +318,32 @@ a {
 .main-content .main-menu{
     text-transform: uppercase;
     justify-content: center;
-    padding: 20px 0;
+    padding-top: 108px;
+    padding-bottom: 20px;
 }
 
 .main-menu .menu-list{
     flex-wrap: wrap;
     gap: 16px;
+}
+
+.main-menu .menu-list > li.active,
+.main-menu .menu-list > li:hover{
+    color: white;
+}
+
+.main-menu .menu-list > li.active::after,
+.main-menu .menu-list > li:hover::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: lightgreen;
+    border-radius: 999px;
+    margin-top: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Recent - Personale - Popolare */
