@@ -285,8 +285,11 @@ a {
     height: 88px;
     background-color: rgb(20, 25, 34);
     color: white;
-    position: fixed;
-    width: calc(100% - 230px);
+    /* position: fixed;
+    width: calc(100% - 230px); */
+    /* E' più corretto usare sticky perchè si posiziona in base alla sua grandezza naturale. */
+    /* Con il position fixed si posiziona in base alla viewport e perde la sua grandezza. */
+    position: sticky;
     top: 0;
     z-index: 9999;
 }
@@ -308,6 +311,8 @@ a {
 }
 
 .main-header .button > a{
+    /* Serve per dare effetto alla "line-height" */
+    display: block;
     text-transform: uppercase;
     padding: 0 40px;
     line-height: 30px;
@@ -323,8 +328,14 @@ a {
 }
 
 .main-menu .menu-list{
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 16px;
+}
+
+.main-menu .menu-list > li{
+    position: relative;
 }
 
 .main-menu .menu-list > li.active,
@@ -341,7 +352,7 @@ a {
     background-color: lightgreen;
     border-radius: 999px;
     margin-top: 5px;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -384,7 +395,8 @@ a {
 .recent-albums,
 .personal-albums,
 .popular-albums{
-    margin: 0 -15px;
+    margin: 0 -8px;
+    flex-wrap: wrap;
 }
 
 .recent-albums .recent-preview,
@@ -392,7 +404,7 @@ a {
 .popular-albums .popular-preview{
     text-align: center;
     row-gap: 16px;
-    padding: 0 15px;
+    padding: 0 8px;
     flex-basis: calc(100% / 6);
 }
 
@@ -400,8 +412,10 @@ a {
 .personal-albums .personal-thumb > img,
 .popular-albums .popular-thumb > img{
     display: block;
-    width: 170px;
+    width: 100%;
     aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
 }
 
 .recent-thumb{
@@ -420,6 +434,7 @@ a {
 .recent-thumb .recent-hover i{
     font-size: 40px;
     color: white;
+    /* L'icona si poteva centrare con il flex */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -430,6 +445,8 @@ a {
 }
 
 .popular-albums .popular-thumb > img{
+    /* Si poteva dare lo stesso comportamento al thumb, aggiungendo
+    un "overflow:hidden" per nascondere ciò che esce dal bordo */
     border-radius: 50%;
 }
 
@@ -576,6 +593,7 @@ a {
     background-color: lightgreen;
 }
 
+/* Sarebbe stato meglio gstire il tutto all'interno della "nav-bar gray" per comodità in javascript */
 .nav-time .nav-bar:hover .nav-bar.white::after{
     content: '';
     display: block;
@@ -586,6 +604,8 @@ a {
     position: absolute;
     right: 0;
     transform: translateY(-40%);
+    /* Serve per centrarlo con il bordo finale della barra completa
+    transform: translateX(-50%);*/
 }
 
 .nav-time > [class^="time-"]{
